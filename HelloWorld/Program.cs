@@ -34,3 +34,38 @@ System.Console.WriteLine(carObj2.Owner);
 // Checking if our property constraints is working
 carObj2.Fuel = 80;
 System.Console.WriteLine(carObj2.Fuel);
+
+StoreMenu customer = new StoreMenu();
+customer.Menu();
+bool repeat = true;
+while(repeat)
+{
+    Console.WriteLine("What do you want to do?");
+    string choice = Console.ReadLine();
+    if (choice == "1")
+    {
+        Console.WriteLine(customer._totalPrice = customer._eggPrice + customer._totalPrice);
+    }
+    else if (choice == "2")
+    {
+        Console.WriteLine(customer._totalPrice = customer._milkPrice + customer._totalPrice);
+    }
+    else if (choice == "3")
+    {
+        Console.WriteLine(customer._totalPrice = customer._waterPrice + customer._totalPrice);
+    }
+    else if (choice == "4")
+    {
+       Console.WriteLine( "Your total is: " + customer._totalPrice);
+
+       repeat = false;
+    }
+    // else if (choice == "Exit")
+    // {
+    //     repeat = false;
+    // }
+    // else
+    // {
+    // "
+    // }
+}
