@@ -14,7 +14,6 @@ Console.WriteLine("Hello, World!"); // Writeline will write something in the ter
 
 Car carObj1 = new Car();
 
-Car carObj2 = new Car();
 
 // Referencing class members within an object
 int mile = carObj1.TotalDistancePerFuel();
@@ -24,3 +23,14 @@ carObj1.Sum(5, 10);
 Console.WriteLine(mile);
 
 Console.WriteLine("End of method");
+
+string owner = "Chadel";
+
+Car carObj2 = new Car(owner);
+Console.WriteLine(carObj2.Owner);
+carObj2.Owner = "Daniel";
+System.Console.WriteLine(carObj2.Owner);
+
+// Checking if our property constraints is working
+carObj2.Fuel = 80;
+System.Console.WriteLine(carObj2.Fuel);

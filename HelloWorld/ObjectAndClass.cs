@@ -4,11 +4,12 @@ public class Car
 {
     // This is a field
     // This is used to store information or define the current state of the object
-    public string _color = "Blue";
-    public string _owner = "Stephen";
+    // By default, fields should all be private
+    private string _color;
+    private string _owner;
 
-    public int _fuel = 100;
-    public int _gallonPerMile = 5;
+    private int _fuel;
+    private int _gallonPerMile;
 
     // This is a method
     // A way to represent behavior/ function and it will run multiple lines of code
@@ -30,6 +31,54 @@ public class Car
     {
         Console.WriteLine(num1+num2);
     }
+
+    // This is a contructor
+    // It is a special method that will run whenever you create an object
+    public Car()
+    {
+        _color = "Blue";
+        _owner = "Stephen";
+        _fuel = 100;
+        _gallonPerMile = 5;
+    }
+
+    public Car(string p_owner)
+    {
+        _owner = p_owner;
+    }
+
+    // This is Property
+    // Gives us the flexibility to check that the data being stored is correct, let only certain things access data, make things read or write
+    public string Owner
+    {
+        get{return _owner + " is the owner of this car.";}
+
+        // set keyword is how you change the data that is being stored
+        set {_owner = value + " Owner";}
+    }
+
+    // Fuel can only hold numbers from 0 to 100
+    public int Fuel
+    {
+        get {return _fuel;}
+        set 
+        {
+            if (value <= 100 && value >= 0)
+            {
+                _fuel = value;
+            }
+            else
+            {
+                _fuel = 100;
+                System.Console.WriteLine("Fuel can only hold from 0 to 100.");
+            }
+        }
+    }
+
+
+
+
+
 
     // This is a constructor
     //  It is a method that will execute whenever you create an object
