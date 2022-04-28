@@ -67,12 +67,29 @@ using System.Collections;
 
 public class StoreMenu
 {
+    // public int _eggPrice;
+    // public int _milkPrice;
+    // public int _waterPrice;
+    // public int _totalPrice;
+
+    public string _name;
+    public string Name
+    {
+        get{return _name;}
+        set{_name = value;}
+    }
     public int _eggPrice;
     public int _milkPrice;
     public int _waterPrice;
     public int _totalPrice;
+    public  int TotalPrice
+    {
+        get{return _totalPrice;}
+        set{_totalPrice = value;}
+    }
 
-    Dictionary<string, int> _personAge = new Dictionary<string, int>();
+
+    Dictionary<string, int> _storeItem = new Dictionary<string, int>();
 
     ArrayList _numbersArrayList = new ArrayList();
     
@@ -102,14 +119,17 @@ public class StoreMenu
         _totalPrice = 0;
 
         Console.WriteLine("===Dictionary Demo===");
-        _personAge.Add("Egg", 4);
-        _personAge.Add("Milk", 2);
-        _personAge.Add("Water", 3);
+        _storeItem.Add("Egg", 4);
+        _storeItem.Add("Milk", 2);
+        _storeItem.Add("Water", 3);
 
 
         List<int> _numbersList = new List<int>();
 
         HashSet<int> _numberHash = new HashSet<int>();
+
+
+
 
         // foreach(int elemant in _numbersArray)
         //     {
@@ -128,5 +148,70 @@ public class StoreMenu
                     
         //             Console.WriteLine(_numbersList[i2]);
         //     }
+    }
+
+    public void StoreItem()
+    {
+        Console.WriteLine("1. Egg $" + _eggPrice);
+        Console.WriteLine("2. Milk $" + _milkPrice);
+        Console.WriteLine("3. Water $" + _waterPrice);
+        string answer = Console.ReadLine();
+        // if (answer == "1")
+        // {
+        //     Console.WriteLine("Current Total: $" + (_totalPrice = _totalPrice + _eggPrice));
+        // }
+        bool repeat = true;
+        while(repeat)
+        if(answer == "1")
+        {
+            Console.WriteLine("egg $4");
+            _totalPrice += _eggPrice;
+            repeat = false;
+        }
+        else if (answer == "2")
+        {
+            Console.WriteLine("milk $2");
+            _totalPrice += _milkPrice;
+            repeat = false;
+        }
+        else if(answer == "3")
+        {
+            Console.WriteLine("water $3");
+            _totalPrice += _waterPrice;
+            repeat = false;
+        }
+        // else if(answer == "4")
+        // {
+        //     Console.WriteLine("Checkout");
+        //     // repeat = false;
+        // }
+        else if(answer == "64")
+            {
+                Console.WriteLine("Your total is: $" + _totalPrice);
+                repeat = false;
+            }
+            else
+            {
+                Console.WriteLine("Error: Choose valid option.");
+            }
+
+    //     }
+    // }
+// }
+// else if (answer == "2")
+// {
+//     repeat = false;
+// }
+// else
+// {
+//         Console.WriteLine("Error: Choose vaild option.");
+// }
+// }
+
+        // else
+        // {
+        //     Console.WriteLine("Your total is: $" + _totalPrice);
+        // }
+
     }
 }

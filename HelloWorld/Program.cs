@@ -12,31 +12,31 @@ Console.WriteLine("Hello, World!"); // Writeline will write something in the ter
 
 // Car carObj3 = new Car();
 
-Car carObj1 = new Car();
+// Car carObj1 = new Car();
 
 
-// Referencing class members within an object
-int mile = carObj1.TotalDistancePerFuel();
+// // Referencing class members within an object
+// int mile = carObj1.TotalDistancePerFuel();
 
-carObj1.Sum(5, 10);
+// carObj1.Sum(5, 10);
 
-Console.WriteLine(mile);
+// Console.WriteLine(mile);
 
-Console.WriteLine("End of method");
+// Console.WriteLine("End of method");
 
-string owner = "Chadel";
+// string owner = "Chadel";
 
-Car carObj2 = new Car(owner);
-Console.WriteLine(carObj2.Owner);
-carObj2.Owner = "Daniel";
-System.Console.WriteLine(carObj2.Owner);
+// Car carObj2 = new Car(owner);
+// Console.WriteLine(carObj2.Owner);
+// carObj2.Owner = "Daniel";
+// System.Console.WriteLine(carObj2.Owner);
 
-// Checking if our property constraints is working
-carObj2.Fuel = 80;
-System.Console.WriteLine(carObj2.Fuel);
+// // Checking if our property constraints is working
+// carObj2.Fuel = 80;
+// System.Console.WriteLine(carObj2.Fuel);
 
 StoreMenu customer = new StoreMenu();
-customer.Menu();
+customer.StoreItem();
 bool repeat = true;
 while(repeat)
 {
@@ -60,6 +60,8 @@ while(repeat)
 
        repeat = false;
     }
+
+
     // else if (choice == "Exit")
     // {
     //     repeat = false;
@@ -70,10 +72,10 @@ while(repeat)
     // }
 }
 
-Collections collectObj = new Collections();
-collectObj.CollectionMain();
+// Collections collectObj = new Collections();
+// collectObj.CollectionMain();
 
-Conversions.ConversionMain();  
+// Conversions.ConversionMain();  
 
 Collections storeObj = new Collections();
 storeObj.CollectionMain();
