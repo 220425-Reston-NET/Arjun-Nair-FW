@@ -152,6 +152,9 @@ public class StoreMenu
 
     public void StoreItem()
     {
+        bool repeat = true;
+        while(repeat){
+        
         Console.WriteLine("1. Egg $" + _eggPrice);
         Console.WriteLine("2. Milk $" + _milkPrice);
         Console.WriteLine("3. Water $" + _waterPrice);
@@ -163,27 +166,22 @@ public class StoreMenu
         // {
         //     Console.WriteLine("Current Total: $" + (_totalPrice = _totalPrice + _eggPrice));
         // }
-        bool repeat = true;
-        while(repeat)
         if(answer == "1")
         {
             Console.WriteLine("egg $4");
             _totalPrice += _eggPrice;
-            repeat = false;
             Console.WriteLine("Current Total $" + _totalPrice);
         }
         else if (answer == "2")
         {
             Console.WriteLine("milk $2");
             _totalPrice += _milkPrice;
-            repeat = false;
             Console.WriteLine("Current Total $" + _totalPrice);
         }
         else if(answer == "3")
         {
             Console.WriteLine("water $3");
             _totalPrice += _waterPrice;
-            repeat = false;
             Console.WriteLine("Current Total $" + _totalPrice);
         }
         // else if(answer == "4")
@@ -219,5 +217,6 @@ public class StoreMenu
         //     Console.WriteLine("Your total is: $" + _totalPrice);
         // }
 
+    }
     }
 }
