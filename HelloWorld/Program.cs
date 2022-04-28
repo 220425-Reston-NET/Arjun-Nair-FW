@@ -69,3 +69,11 @@ while(repeat)
     // "
     // }
 }
+
+Collections collectObj = new Collections();
+collectObj.CollectionMain();
+
+Conversions.ConversionMain();  
+
+Collections storeObj = new Collections();
+storeObj.CollectionMain();
