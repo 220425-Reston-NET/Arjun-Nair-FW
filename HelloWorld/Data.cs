@@ -155,6 +155,9 @@ public class StoreMenu
         Console.WriteLine("1. Egg $" + _eggPrice);
         Console.WriteLine("2. Milk $" + _milkPrice);
         Console.WriteLine("3. Water $" + _waterPrice);
+        Console.WriteLine("4. Checkout");
+        Console.WriteLine("Current Total $" + _totalPrice);
+        
         string answer = Console.ReadLine();
         // if (answer == "1")
         // {
@@ -167,25 +170,28 @@ public class StoreMenu
             Console.WriteLine("egg $4");
             _totalPrice += _eggPrice;
             repeat = false;
+            Console.WriteLine("Current Total $" + _totalPrice);
         }
         else if (answer == "2")
         {
             Console.WriteLine("milk $2");
             _totalPrice += _milkPrice;
             repeat = false;
+            Console.WriteLine("Current Total $" + _totalPrice);
         }
         else if(answer == "3")
         {
             Console.WriteLine("water $3");
             _totalPrice += _waterPrice;
             repeat = false;
+            Console.WriteLine("Current Total $" + _totalPrice);
         }
         // else if(answer == "4")
         // {
         //     Console.WriteLine("Checkout");
         //     // repeat = false;
         // }
-        else if(answer == "64")
+        else if(answer == "4")
             {
                 Console.WriteLine("Your total is: $" + _totalPrice);
                 repeat = false;
