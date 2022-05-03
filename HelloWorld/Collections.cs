@@ -40,82 +40,82 @@ public class Collections
 
     public async void CollectionMain()
     {
-        // Console.WriteLine("===Array Demo===");
-        // // Allows us to set what tos tore in certain positions
-        // // 0 1 2 3 4 - Zero-based index
-        // _numbersArray[0] = 3;
-        // _numbersArray[1] = 10;
-        // _numbersArray[2] = 100;
+        Console.WriteLine("===Array Demo===");
+        // Allows us to set what tos tore in certain positions
+        // 0 1 2 3 4 - Zero-based index
+        _numbersArray[0] = 3;
+        _numbersArray[1] = 10;
+        _numbersArray[2] = 100;
 
-        // // A way to go through an array
-        // System.Console.WriteLine(_numbersArray[0]);
-        // System.Console.WriteLine(_numbersArray[1]);
-        // System.Console.WriteLine(_numbersArray[2]);
-        // System.Console.WriteLine(_numbersArray[3]);
-        // System.Console.WriteLine(_numbersArray[4]);
+        // A way to go through an array
+        System.Console.WriteLine(_numbersArray[0]);
+        System.Console.WriteLine(_numbersArray[1]);
+        System.Console.WriteLine(_numbersArray[2]);
+        System.Console.WriteLine(_numbersArray[3]);
+        System.Console.WriteLine(_numbersArray[4]);
 
-        // // A way to go through an array
-        // // Foreach will iterate through all the of the elements of the array
-        // // Syntax: ((datatype) (nameOfVariable) in (nameOfVariable))
-        // foreach (int element in _numbersArray)
-        // {
-        //     System.Console.WriteLine(element);
-        // }
+        // A way to go through an array
+        // Foreach will iterate through all the of the elements of the array
+        // Syntax: ((datatype) (nameOfVariable) in (nameOfVariable))
+        foreach (int element in _numbersArray)
+        {
+            System.Console.WriteLine(element);
+        }
 
-        // System.Console.WriteLine("===List Demo===");
-        // _numberList.Add(3);
-        // _numberList.Add(10);
-        // _numberList.Add(100);
+        System.Console.WriteLine("===List Demo===");
+        _numberList.Add(3);
+        _numberList.Add(10);
+        _numberList.Add(100);
 
-        // // System.Console.WriteLine(_numberList[1]);
+        // System.Console.WriteLine(_numberList[1]);
         
-        // foreach (int element in _numberList)
-        // {
-        //     System.Console.WriteLine(element);
-        // }
+        foreach (int element in _numberList)
+        {
+            System.Console.WriteLine(element);
+        }
 
-        // // For loop
-        // // sets a variable; some condition to check if it repeats again; increment/ decrement of a variable
-        // for (int i = 0; i < _numberList.Count; i++)
-        // {
-        //     Console.WriteLine(_numberList[i]);
-        // }
+        // For loop
+        // sets a variable; some condition to check if it repeats again; increment/ decrement of a variable
+        for (int i = 0; i < _numberList.Count; i++)
+        {
+            Console.WriteLine(_numberList[i]);
+        }
 
-        // // While loop
-        // int i2=0;
-        // while (i2 < _numberList.Count)
-        // {
-        //     Console.WriteLine(_numberList[i2]);
-        //     i2++;
-        // }
+        // While loop
+        int i2=0;
+        while (i2 < _numberList.Count)
+        {
+            Console.WriteLine(_numberList[i2]);
+            i2++;
+        }
 
-        // Console.WriteLine("===Hash Demo===");
-        // _numbersHash.Add(3);
-        // _numbersHash.Add(10);
-        // _numbersHash.Add(100);
-        // _numbersHash.Add(100);
+        Console.WriteLine("===Hash Demo===");
+        _numbersHash.Add(3);
+        _numbersHash.Add(10);
+        _numbersHash.Add(100);
+        _numbersHash.Add(100);
 
-        // foreach (int element in _numbersHash)
-        // {
-        //     Console.WriteLine(element);
-        // }
+        foreach (int element in _numbersHash)
+        {
+            Console.WriteLine(element);
+        }
 
-        // Console.WriteLine("===Dictionary Demo===");
-        // _personAge.Add("Chadel", 26);
-        // _personAge.Add("Troy", 31);
-        // _personAge.Add("Maaz", 24);
+        Console.WriteLine("===Dictionary Demo===");
+        _personAge.Add("Chadel", 26);
+        _personAge.Add("Troy", 31);
+        _personAge.Add("Maaz", 24);
 
-        // Console.WriteLine(_personAge["Troy"]);
+        Console.WriteLine(_personAge["Troy"]);
 
-        // Console.WriteLine("===ArrayList Demo===");
-        // _numbersArrayList.Add("Hello");
-        // _numbersArrayList.Add(10);
-        // _numbersArrayList.Add(12.03);
-        // _numbersArrayList.Add(true);
+        Console.WriteLine("===ArrayList Demo===");
+        _numbersArrayList.Add("Hello");
+        _numbersArrayList.Add(10);
+        _numbersArrayList.Add(12.03);
+        _numbersArrayList.Add(true);
 
-        // foreach (object item in _numbersArrayList)
-        // {
-        //     Console.WriteLine(item);
-        // }
+        foreach (object item in _numbersArrayList)
+        {
+            Console.WriteLine(item);
+        }
     }
 }

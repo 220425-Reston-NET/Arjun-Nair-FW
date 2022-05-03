@@ -74,10 +74,13 @@ while(repeat)
     // }
 }
 
-// Collections collectObj = new Collections();
-// collectObj.CollectionMain();
+Collections collectObj = new Collections();
+collectObj.CollectionMain();
 
-// Conversions.ConversionMain();  
+Conversions.ConversionMain();  
 
 Collections storeObj = new Collections();
 storeObj.CollectionMain();
+
+Serialization serialobj = new Serialization();
+serialobj.SerializationMain();

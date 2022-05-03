@@ -11,6 +11,8 @@ public class Car
     private int _fuel;
     private int _gallonPerMile;
 
+    private string _brand;
+
     // This is a method
     // A way to represent behavior/ function and it will run multiple lines of code
     // void means that the method will not returnm anything
@@ -74,6 +76,8 @@ public class Car
             }
         }
     }
+
+    public string Brand { get; internal set; }
 
 
 
